@@ -19,7 +19,7 @@ def send_email(message):
     with smtplib.SMTP(smtp_server, smtp_port) as server:
         server.starttls()
         server.login(smtp_user, smtp_password)
-        server.sendmail(smtp_user, 'destinatario@example.com', msg.as_string())
+        server.sendmail(smtp_user, 'socialwave2024@gmail.com', msg.as_string())
         print("Correo enviado")
 
 def callback(ch, method, properties, body):
